@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Book now</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="booking">
-
-        <h1 class="heading-title">book your trip!</h1>
-     
-        <form action="book_form.php" method="post" class="book-form">
-     
-           <div class="flex">
-              <div class="inputBox">
-                 <span>name :</span>
-                 <input type="text" placeholder="enter your name" name="name">
-              </div>
-              <div class="inputBox">
-                 <span>email :</span>
-                 <input type="email" placeholder="enter your email" name="email">
-              </div>
-              <div class="inputBox">
-                 <span>phone :</span>
-                 <input type="number" placeholder="enter your number" name="phone">
-              </div>
-              <div class="inputBox">
-                 <span>address :</span>
-                 <input type="text" placeholder="enter your address" name="address">
-              </div>
-              <div class="inputBox">
-                 <span>where to :</span>
-                 <input type="text" placeholder="place you want to visit" name="location">
-              </div>
-              <div class="inputBox">
-                 <span>how many :</span>
-                 <input type="number" placeholder="number of guests" name="guests">
-              </div>
-              <div class="inputBox">
-                 <span>arrivals :</span>
-                 <input type="date" name="arrivals">
-              </div>
-              <div class="inputBox">
-                 <span>leaving :</span>
-                 <input type="date" name="leaving">
-              </div>
+<section>
+   <body class="main_bg">
+       <div class="form">
+           <div class="form-text">
+               <h1><span><img src="images/art-1.png" alt=""></span>Book Now <span><img src="images/art-1.png" alt=""></span></h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
            </div>
-     
-           <input type="submit" value="submit" class="btn" name="send">
-     
-        </form>
-     
-     </section>
+           <div class="main-form">
+               <form action="index.php" method="get">
+                   <div>
+                       <span>Your full name ?</span>
+                       <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                   </div>
+                   <div>
+                       <span>Your email address ?</span>
+                       <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                   </div>
+                   <div>
+                       
+                       <span>How many people ?</span>
+                       <select name="people" id="people" required>
+                           <option value=""><---People---></option>
+                           <option value="1">1 People</option>
+                           <option value="2">2 People</option>
+                           <option value="3">3 People</option>
+                           <option value="4">4 People</option>
+                       </select>
+                      
+                   </div>
+                   <div>
+                       <span>What time ?</span>
+                       <input type="text" name="time" id="time" placeholder="Time" required>
+                   </div>
+                   <div>
+                       <span>What is the date ?</span>
+                       <input type="date" name="date" id="date" placeholder="date" required>
+                   </div>
+                   <div>
+                       <span>Your phone number ?</span>
+                       <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                   </div>
+                   <div id="submit">
+                       <input type="submit" value="SUBMIT" id="submit">
+                   </div>
+   
+   
+               </form>
+           </div>
+       </div>
+      </section>
 </body>
+
 </html>
